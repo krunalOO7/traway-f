@@ -12,3 +12,5 @@ urlpatterns = [
     path("admin",views.admin,name="admin")
 
 ]
+
+# handler404 = 'pages.views.error_404_view'

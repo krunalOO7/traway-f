@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.conf import settings
 
 def login(request):
     return render(request,"login.html")
@@ -20,6 +21,11 @@ def paymentcofirmation(request):
 
 def admin(request):
     return render(request,"admin.html")
+
+def error_404_view(request, exception):
+    return render(request, '404.html')
+
+
 
 
 
