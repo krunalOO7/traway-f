@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Agency</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- font awesome link  -->
+
+    <link rel="stylesheet" href="{% static 'user/css/popularplaces.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/main.css' %}">
+
+    
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <img style="padding-top: 5px;" src="/static/user/images/logo.svg" alt="Every Sunday Logo">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="/popular-places.html">Popular Places</a></li>
+
+                <li><a href="/feedback.html">Feedback</a></li>
+                <li><a href="/prices.html">Pricing</a></li>
+            </ul>
+        
+            <div id="login-container">
+                <a href="./login.html" id="loginBtn"><i class="fa-solid fa-user" id="login-btn"></i></a>
+                <div style="display: none;">
+                    <a href='./checkout.html'><i class="fa-solid fa-cart-shopping" style="margin-right:1rem"></i></a>
+                    <a href="/" id="logout-btn" class='btn-small' style='border-radius:50px;color:var(--white)'>Log Out</a>
+                </div>       
+            </div>
+            <div class="responsive-nav">
+                <i class="fa-solid fa-bars" style="color:var(--white-light)"></i>
+                <div class="responsive-nav-content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/destination.html">Destination</a></li>
+                        <li><a href="/feedback.html">Feedback</a></li>
+                        <li><a href="/prices.html">Pricing</a></li>
+                    </ul>
+                    <div id="login-container">
+                        <a href="./login.html" id="loginBtn"><i class="fa-solid fa-user" id="login-btn"></i></a>
+                        <div style="display: none;">
+                            <a href='./checkout.html'><i class="fa-solid fa-cart-shopping" style="margin-right:1rem"></i></a>
+                            <a href="/" id="logout-btn" class='btn-small' style='border-radius:50px;color:var(--white)'>Log Out</a>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- package section start -->
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>paris</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$85.00 <span>$100.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>egypt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$98.00 <span>$115.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>sydney</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$95.00 <span>$110.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>hawaii</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$79.00 <span>$90.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$100.00 <span>$125.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>tokyo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- package section end -->
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
