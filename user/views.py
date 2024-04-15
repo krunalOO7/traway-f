@@ -10,6 +10,9 @@ def index(request):
 def destinations(request):
     return render(request,"destinations.html")
 
+def checkout(request):
+    return render(request,"checkout.html")
+
 def feedback(request):
     return render(request,"feedback.html")
 
